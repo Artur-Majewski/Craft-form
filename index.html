@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <title>Have Fun Inc.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3e9510479e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="formWrapper">
+        <header class="title">
+            <h1>Formularz rejestracyjny</h1>
+        </header>
+        <main class="content">
+            <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type=hidden name="oid" value="00D5r0000004ZIb">
+                <input type=hidden name="retURL" value="http://google.com">
+
+                <div class="formComponent">
+                    <label for="company">Nazwa firmy:</label>
+                    <input id="company" maxlength="40" name="company" size="20" type="text" />
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="first_name"><sup class="requiredField">* </sup>Imię:</label>
+                    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="last_name"><sup class="requiredField">* </sup>Nazwisko:</label>
+                    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="phone"><sup class="requiredField">* </sup>Telefon:</label>
+                    <input id="phone" maxlength="40" name="phone" size="20" type="text" />
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="email"><sup class="requiredField">* </sup>Email:</label>
+                    <input id="email" maxlength="80" name="email" size="20" type="text" />
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="isHiddenLabel">
+                    Event Start Date:<span class="dateInput dateOnlyInput">
+                        <input class="dateStartInput" id="00N5r000008S749" name="00N5r000008S749" size="12"
+                            type="text" /></span><br>
+                    Event End Date:<span class="dateInput dateOnlyInput">
+                        <input class="dateEndInput" id="00N5r000008S748" name="00N5r000008S748" size="12"
+                            type="text" /></span><br>
+                </div>
+
+                <div class="formComponent">
+                    <label for="dataStart"><sup class="requiredField">* </sup>Data rozpoczęcia wydarzenia: </label>
+                    <input type="date" name="" id="startDateId">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="dataEnd"><sup class="requiredField">* </sup>Data zakończenia wydarzenia: </label>
+                    <input type="date" name="" id="endDateId">
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+
+                <div class="formComponent">
+                    <label for="description"><sup class="requiredField">* </sup>Opis wydarzenia:</label>
+                    <textarea id="00N5r000008S747" class="eventDescritionArea" name="00N5r000008S747" rows="3" type="text" wrap="soft"></textarea>
+                    <i class="fa-solid fa-check"></i>
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Error</span>
+                </div>
+                <div class="formComponent">
+                    <label for="gdpr">RODO:</label>
+                    <input id="00N5r000008U6BH" name="00N5r000008U6BH" type="checkbox" value="1" /> <p><sup class="requiredField">* </sup>Przetwarzanie danych osobowych</p>
+                    <input id="00N5r000008U6BM" name="00N5r000008U6BM" type="checkbox" value="1" /> <p><sup class="requiredField">* </sup>Zaakceptowanie regulaminu</p>
+                    <input id="00N5r000008U6BW" name="00N5r000008U6BW" type="checkbox" value="1" /> <p><sup class="requiredField">* </sup>Zgoda na kontakt telefoniczny</p>
+                    <input id="00N5r000008U6Bb" name="00N5r000008U6Bb" type="checkbox" value="1" /> <p><sup class="requiredField">* </sup>Zgoda na kontakt mailowy</p>
+                    <span>Error</span>
+                </div>
+                <input type=hidden name="status" id="status" value="New">
+                <input type="hidden" id="lead_source" name="lead_source" value="Web" />
+
+                <input type="submit" class="btn" name="submit" value="Prześlij">
+            </form>
+        </main>
+    </section>
+    <script src="srcipt.js"></script>
+
+</body>
+
+</html>
